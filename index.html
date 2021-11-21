@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="https://thuvienlogo.com/data/03/logo-ban-nhac-dep-02.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./imagehover.css-master/css/imagehover.min.css">
+    <title>Chào mừng đến với trang web thông tin ba chị em</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+            max-height: 0%;
+        }
+       
+        #main{
+            background-color: rgb(48, 45, 47);
+        }
+        /* Infor */
+        .infor{
+            height: 350px;
+            position: relative;
+            display: flex;
+            margin: 24px 16px;
+            border-top: 2px solid #000;
+        }
+        .infor__avatar-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 240px;
+            width: 240px;
+            border-radius: 50%;
+        }
+
+        .infor__name{
+            position: absolute;
+            color: #fff;
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: "Great Vibes", serif;
+            top: 2%;
+            right: 16px;
+            transition: all linear 0.2s;
+            will-change: font-size;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+            animation-direction: alternate;
+        }
+
+        .infor__name:hover{
+            font-size: 3rem;
+            color: rgb(252, 255, 102);
+        }
+
+        .infor__name:hover::after{
+            animation: GrownRight linear 0.4s;
+            animation-fill-mode: both;
+        }
+        
+        .infor__name::after{
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            height: 4px;
+            border-radius: 2px;
+            width: 0%;
+            background-color: rgb(252, 255, 102);
+        }
+
+        @keyframes GrownRight{
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+        .infor__avatar{
+            height: auto;
+            min-width: 100%;
+            position: relative;
+        }
+
+        .infor__form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .infor__form-birth{
+            position: absolute;
+            top: 6%;
+            left: 20%;
+        }
+
+        .infor__form-country{
+            position: absolute;
+            top: 26%;
+            left: 30%;
+
+        }
+
+        .infor__form-job{
+            position: absolute;
+            top: 46%;
+            left: 40%;
+        }
+
+        .infor__form-favorite{
+            position: absolute;
+            top: 66%;
+            left: 50%;
+        }
+
+        .infor__facebook{
+            position: absolute;
+            top: 86%;
+            left: 60%;
+        }
+
+        .infor__form-link{
+            position: relative;
+            color: #999;
+            text-decoration: none;
+            transition: font-size linear 0.2s;
+        }
+
+        .infor__form-link:hover{
+            font-size: 2.1rem;
+            color: rgb(39, 140, 207);
+        }
+        
+        .infor__form-link::after{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: block;
+            height: 4px;
+            width: 0;
+            background-color: rgb(39, 140, 207);
+        }
+        
+        .infor__form-link:hover::after{
+            content: "";
+            animation: GrownRight linear 0.4s;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: rgb(39, 140, 207);
+        }
+
+        .infor__facebook,
+        .infor__form-birth,
+        .infor__form-country,
+        .infor__form-job,
+        .infor__form-favorite{
+            min-width: 400px;
+            border: 2px solid #2757f7;
+            border-radius: 10px;
+            padding: 10px 16px;
+            background-color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+            will-change: padding, font-size;
+            transition: padding linear 0.2, font-size linear 0.2s;
+        }
+
+        .infor__facebook:hover,
+        .infor__form-birth:hover,
+        .infor__form-country:hover,
+        .infor__form-job:hover,
+        .infor__form-favorite:hover{
+            border: 2px solid red;
+            padding: 11px 17px;
+        }
+    </style>
+</head>
+<body>
+        <div id="main">
+        <div class="infor">
+            <div class="infor__avatar">
+                <figure class="imghvr-zoom-out-up infor__avatar-img">
+                    <img src="https://f22-zpc.zdn.vn/4477182670576742906/0ec6a69cc20b0a55531a.jpg" class="infor__avatar-img" alt="example-image">
+                    <figcaption>
+                        <img src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/s200x200/248038920_244560181039637_603077125484610614_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=7206a8&_nc_ohc=fX4kopF6rjsAX__-RSY&_nc_ht=scontent.fsgn4-1.fna&oh=267ebf1431193a9530802605f6cf4487&oe=61966967" alt="" class="infor__avatar-img">
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+                <span class="infor__avatar-name">
+                    <a href="https://www.facebook.com/profile.php?id=100064569716136" class="infor__name">Lại Thanh Trúc</a>
+                </span>
+            </div>
+            <div >
+                <span class="infor__form-birth">04/07/2003</span>
+                <span class="infor__form-country">TP.HCM</span>
+                <span class="infor__form-job">Lập trình viên</span>
+                <span class="infor__form-favorite">Nghe nhạc, thể thao, esport,...</span>
+                <span class="infor__facebook">Link facebook:
+                    <a class="infor__form-link" href="https://www.facebook.com/profile.php?id=100064569716136">Facebook Lại Thanh Trúc</a>
+                </span>
+            </div>
+           
+            
+        </div>
+        <div class="infor">
+            <div class="infor__avatar">
+                <figure class="imghvr-fold-right infor__avatar-img">
+                    <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.15752-9/256629053_324571366164353_7820250527955018196_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=EMYaFONroX8AX_NKl0I&_nc_ht=scontent.fsgn2-4.fna&oh=5577508e0a80bfd36e7d5092c7572b08&oe=61B74548" class="infor__avatar-img" alt="example-image">
+                    <figcaption>
+                        <img src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.6435-1/p200x200/247430224_1034266734003734_2860729950398109853_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_ohc=c8G9vyN0AckAX82hf0f&_nc_ht=scontent.fsgn8-2.fna&oh=783b2eab6ceb9366552b386ad8cad186&oe=61A5A582
+
+                        " alt="" class="infor__avatar-img">
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+                <h3 class="infor__name">Nguyễn Thị Hồng Ngọc</h3>
+            </div>
+            
+            <div >
+                <span class="infor__form-birth">19/09/2003</span>
+                <span class="infor__form-country">Bà Rịa, Vũng Tàu</span>
+                <span class="infor__form-job">Lập trình viên</span>
+                <span class="infor__form-favorite">Nghe nhạc, đọc truyện, esport,...</span>
+                <span class="infor__facebook">Link facebook:
+                    <a class="infor__form-link" href="https://www.facebook.com/profile.php?id=100064569716136">Facebook Nguyễn Thị Hồng Ngọc</a>
+                </span>
+            </div>
+        </div>
+        <div class="infor">
+            <div class="infor__avatar">
+                <figure class="imghvr-zoom-out-flip-horiz infor__avatar-img">
+                    <img src="https://scontent.fsgn2-2.fna.fbcdn.net/v/t1.15752-9/255973624_581986383018954_1928247103663475622_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=oAMZ_OfRs-oAX8Jf9t8&tn=jOv2F10cIU0OryEE&_nc_ht=scontent.fsgn2-2.fna&oh=89aa5a29e0d938dc722af66f0197198c&oe=61B9813A" class="infor__avatar-img" alt="example-image">
+                    <figcaption>
+                        <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/240596746_997861517447393_3361137852867573087_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_gD9JUnwUhoAX_9QXv4&_nc_ht=scontent.fsgn2-4.fna&oh=66188090e6d55dbef5ef56955e1d6abd&oe=61970EEC" alt="" class="infor__avatar-img">
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+                <h3 class="infor__name">Lý Kim Thanh</h3>
+            </div>
+            
+            <div >
+                <span class="infor__form-birth">13/04/2003</span>
+                <span class="infor__form-country">TP.HCM</span>
+                <span class="infor__form-job">Lập trình viên</span>
+                <span class="infor__form-favorite">Nghe nhạc, sưu tầm màu vẽ, esport,...</span>
+                <span class="infor__facebook">Link facebook:
+                    <a class="infor__form-link" href="https://www.facebook.com/thanh.kim.7524">Facebook Lý Kim Thanh</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
