@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 300px;
+}
+html{
+    background-color: darkgray;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: darkorange;
+    text-align: center;
+}
+.container {
+    display: flex;
+    padding: 25px;
+    text-align: center;
+}
+a{
+    color: beige;
+    padding: 140px 140px 0 140px;
+    font-size: x-large;
+}
